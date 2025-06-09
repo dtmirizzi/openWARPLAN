@@ -1,0 +1,138 @@
+body {
+    background-color: #0d0d0d; /* Very dark grey, almost black */
+    color: #0f0; /* Bright green for text, like old terminals */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for hacker feel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    background-color: #1a1a1a; /* Darker grey for container backgrounds */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Green glow effect */
+    border: 1px solid #0f0; /* Green border */
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 0 0 5px #0f0; /* Green text shadow */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0f0; /* Green border */
+    background-color: #0d0d0d; /* Match body background */
+    color: #0f0; /* Green text */
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #0a0; /* Darker green for placeholders */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #050; /* Dark green */
+    color: #0f0; /* Bright green text */
+    border: 1px solid #0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #070; /* Slightly lighter green on hover */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+button:active {
+    background-color: #090; /* Even lighter green on active/click */
+}
+
+#google-login-btn {
+    background-color: #1c1c1c; /* Different background for Google button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#google-login-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 15px 0;
+    color: #0f0;
+    display: flex;
+    align-items: center;
+}
+
+.or-divider span {
+    padding: 0 10px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #0f0; /* Green line */
+    margin: 0 5px;
+}
+
+/* Dashboard specific styles */
+.dashboard {
+    max-width: 800px;
+    text-align: center;
+}
+
+.dashboard header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #0f0;
+}
+
+.dashboard header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    text-shadow: 0 0 7px #0f0;
+}
+
+#logout-btn {
+    width: auto;
+    padding: 8px 15px;
+    background-color: #300; /* Dark red for logout */
+    border-color: #f00; /* Red border for logout */
+    color: #f00; /* Red text for logout */
+}
+
+#logout-btn:hover {
+    background-color: #500;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.dashboard main p {
+    font-size: 1.2em;
+}
